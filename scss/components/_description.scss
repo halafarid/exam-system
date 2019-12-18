@@ -1,0 +1,56 @@
+.desc {
+    width: 30%;
+
+    &__card {
+        margin-bottom: 3rem;
+    }
+
+    &__time {
+        // padding: 2rem 3rem;
+        // line-height: 2;
+        text-align: center;
+        font-size: 2.7rem;
+        color: $dark;
+    }
+
+    &__skip {
+        padding: 0rem 3rem;
+        display: inline-block;
+        
+        &-ques {
+            margin: 2rem auto;
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2.5;
+            font-size: 2rem;
+            cursor: pointer;
+    
+
+            background-color: $danger;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                background-color: $danger-dark;
+                color: $default;
+            }
+        }
+    }
+
+    &__user {
+        margin-bottom: 0;
+
+        &-data {
+            padding: 1rem 3rem 0rem;
+            color: $inverse;
+            font-weight: bold;
+
+            &-value {
+                color: $dark;
+                display: inline-block;
+                width: 35%;
+            }
+        }
+    }
+}

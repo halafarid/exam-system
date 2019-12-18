@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form class="card form">
+                <h1 class="card__title form__title">Online Exam</h1>
+                <div class="form-group">
+                    <label for="username" class="form-label">Username : </label>
+                    <input type="text" autocomplete="off" name="username" id="username" class="form-input">
+                    <span class="form-error" id="username-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nationalID" class="form-label">National ID : </label>
+                    <input type="text" autocomplete="off" name="nationalID" id="nationalID" class="form-input">
+                    <span class="form-error" id="national-error"></span>
+                </div>
+
+                <div class="form-group">                    
+                    <label for="password" class="form-label">Password : </label>
+                    <input type="password" autocomplete="off" name="password" id="password" class="form-input">
+                    <span class="form-error" id="password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email : </label>
+                    <input type="email" autocomplete="off" name="email" id="email" class="form-input">
+                    <span class="form-error" id="email-error"></span>
+                </div>
+
+                <button type="submit" class="form-btn" id="login">Login</button>
+            </form>
+        </div>
+
+        <script src="js/login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.exam {
+    width: 60%;
+
+    &-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+// .desc {
+
+    // &__skipList {
+    //     display: flex;
+
+    // }
+
+// }

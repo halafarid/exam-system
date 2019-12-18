@@ -1,0 +1,92 @@
+.form {
+    border: 0.2rem solid $inverse;
+    background-color: $default;;
+    box-shadow: 5px 5px 5px $inverse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+
+    &-group {
+        margin: 3rem;
+    }
+
+    &-label {
+        display: inline-block;
+        width: 25%;
+        color: $inverse;
+        font-size: 1.8rem;
+        font-weight: $weight-bold;
+        letter-spacing: 0.1rem;
+    }
+
+    &-input {
+        padding: 0.7rem;
+        color: $primary;
+        font-weight: $weight-bold;
+        letter-spacing: 0.1rem;
+        outline: none;
+        border: 0.1rem solid $inverse;
+        position: relative;
+    }
+
+    &-btn {
+        background-color: $inverse;
+        color: $default;
+        padding: 1rem 7rem;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        border: none;
+        box-shadow: 0px 5px 5px #999;
+
+        &:hover {
+            box-shadow: 0px 3px 3px #999;
+            transform: translateY(3px);
+            background-color: #7e9fc0;
+        }
+    }
+
+    &-error {
+        display: block;
+        position: absolute;
+        left: 50%;
+        font-size: 1.5rem;
+        color: $wrong;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -25px;
+        width: 55px;
+        height: 60px;
+        background: $light;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        right: -25px;
+        width: 55px;
+        height: 60px;
+        background: $light;
+        border-radius: 50%;
+    }
+}
+
+.error {
+    border: 0.1rem solid $wrong;
+}

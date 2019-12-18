@@ -1,0 +1,13 @@
+.card {
+    border: 1px solid $inverse;
+    min-height: 14rem;
+
+    &__title {
+        background-color:$inverse;
+        color: $default;
+        border-bottom: 1px solid #aaa;
+        padding: 1rem;
+        margin: 0;
+        font-weight: $weight-bold;
+    }
+}

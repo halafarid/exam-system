@@ -1,0 +1,103 @@
+.exam {
+    height: 56.3rem;
+
+    &__count {
+        padding: 2rem;
+    }
+    
+    &__question {
+
+        &-title {
+            // background-color: #eee;
+            color: $inverse;
+            font-weight: $weight-bold;
+            font-size: 2rem;
+            margin: 3rem 3rem 1rem;
+        }
+
+        &-choices {
+            margin: 3rem;
+        }
+        
+        &-choice {
+            display: block;
+            color: $dark;
+            font-size: 1.7rem;
+            margin: 1.5rem;
+            border: 0.1rem solid $info-dark;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    &__buttons {
+        padding: 2rem 1rem;
+    }
+
+    &__modal {
+        opacity: 0;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.choice {
+    &-input {    
+        display: none;
+        
+        &:checked ~ span {
+            color: #fff;
+            border-radius: 1rem;
+            
+            &:before {
+                transform: translate(-50%, -50%) scale3d(56, 56, 1);
+                opacity: 1;
+            }
+        }
+    }
+
+    &-text {
+        position: relative;
+        padding: 1rem 3rem;
+        display: block;
+        z-index: 2;
+        transition: color 0.3s ease-in;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 3rem;
+            height: 4rem;
+            background-color: $info-dark;
+            transition: all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.modal {
+    &-section {
+        background: $default;
+        color: $wrong;
+        width: 50%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 4rem;
+        padding-bottom: 5rem;
+        border-radius: 1rem;
+    }
+}
+ 

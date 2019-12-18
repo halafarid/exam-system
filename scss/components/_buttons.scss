@@ -1,0 +1,82 @@
+.btn {
+    color: $dark;
+    font-weight: $weight-bold;
+    font-size: 1.8rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding:  1.4rem 6rem;
+    margin: 0.5rem 0rem;
+    cursor: pointer;
+    
+    
+    &--curve {
+        
+        &-left {
+            position: relative;
+            border-radius: 2rem 0rem 0rem 2rem;
+        }
+        
+        &-right {
+            border-radius: 0rem 2rem 2rem 0rem;
+        }
+    }
+
+    &--primary {
+        background-color: $primary;
+
+    }
+    &--danger {
+        background-color: $danger;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background-color: $danger-dark;
+            color: $default;
+        }
+    }
+    &--success {
+        background-color: $success;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background-color: $success-dark;
+            color: $default;
+        }
+    }
+    &--warning {
+        background-color: $warning;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background-color: $warning-dark;
+            color: $default;
+        }
+    }
+    &--info {
+        background-color: $info;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background-color: $info-dark;
+            color: $default;
+        }
+    }
+    &:disabled {
+        background-color: #ddd;
+        color: #aaa;
+        cursor: default;
+    }
+
+    &--wide {
+        width: 100%;
+        display: block;
+    }
+}
+
+// @keyframes scale {
+//     0% {
+//         transform: scale(0);
+//     }
+//     50% {
+//         transform: scale(0.5);
+//     }
+//     100% {
+//         transform: scale(1);
+//     }
+// }
